@@ -185,7 +185,7 @@ namespace SuperMarketScraper.Services
             HtmlNodeCollection price;
             while (true)
             {
-                string uri = "https://eshop.mymarket.gr/search?query=" + search.Trim().Replace(" ", "+");
+                string uri = "https://www.mymarket.gr/search?query=" + search.Trim().Replace(" ", "+");
                 var response = await client.GetStringAsync(uri).ConfigureAwait(false);
                 HtmlDocument document = new HtmlDocument();
                 document.LoadHtml(response);

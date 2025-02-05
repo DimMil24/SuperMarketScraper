@@ -14,6 +14,8 @@ namespace SuperMarketScraper.Model
         public String? Mymarket { get; set; }
         public String? Masoutis { get; set; }
 
+        public Order() { }
+
         public Order(String name)
         {
             this.Name = name;
